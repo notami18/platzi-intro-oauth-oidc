@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
-      Athorization: `Basic ${clientAuth}`,
+      Authorization: `Basic ${clientAuth}`,
     },
     body: querystring.stringify({
       grant_type: "authorization_code",
